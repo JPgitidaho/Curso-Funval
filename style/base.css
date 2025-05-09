@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1800px;
+
+}
+
+span {
+    color: blue;
+}
+
+img {
+    width: 400px;
+
+}
+
+#titulo {
+
+}
+.post {
+    
+}
+
+th,
+td {
+    border: 1px solid red;
+    width: 200px;
+}
