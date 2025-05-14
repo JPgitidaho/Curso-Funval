@@ -11,19 +11,21 @@ function aleatorio(min, max) {
 
 function eleccion(jugada) {
   const pociones = ["", "piedra 🏐", "papel 📋", "tijera ✂"];
-  return opciones[jugada] || "Mala eleccion";
+  return pociones[jugada] || "Mala eleccion";
 }
 
 let jugador = 0;
-let max = 1;
 let min = 3;
+let max = 1;
 let pc = 0;
 let triunfos = 0;
 let perdidas = 0;
 
 while (triunfos < 3 && perdidas < 3) {
-  pc = aleatorio(1, 3); //se define el valor
-  jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
+  pc = aleatorio(min, max); //se define el valor
+  jugador = parseInt(
+    prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
+  );
 
   alert("Pc elige: " + eleccion(pc));
   alert("Tu eliges: " + eleccion(jugador));
@@ -32,8 +34,9 @@ while (triunfos < 3 && perdidas < 3) {
     alert("EMPATE");
   } else if (
     (jugador == 1 && pc == 3) ||
-    (jugador == 2 && pc == 2) ||
-    (jugador == 3 && pc == 1)) {
+    (jugador == 2 && pc == 1) ||
+    (jugador == 3 && pc == 2)
+  ) {
     alert("GANASTE");
     triunfos++;
   } else if (jugador >= 1 && jugador <= 3) {
@@ -44,4 +47,4 @@ while (triunfos < 3 && perdidas < 3) {
   }
 }
 
-alert("Ganaste $(triunfos) veces. Perdiste $(perdidas) veces.");
+alert(`Ganaste ${triunfos} veces. Perdiste ${perdidas} veces.`);
