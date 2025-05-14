@@ -6,7 +6,11 @@ alert("Bienvenida " + nombre); // se utiliza la funcion alert para dar la bienve
 */
 function aleatorio(min, max) {
   //se establece el parametro y se define la funcion
-  return Math.floor(Math.random() * (max - min + 1) + min); //let pc = Math.floor(Math.random() * (max - min +1) + min)//algoritmo
+  return Math.floor(Math.random() * (max - min + 1) + min); 
+  
+  
+  
+  //let pc = Math.floor(Math.random() * (max - min +1) + min)//algoritmo
 }
 
 function eleccion(jugada) {
