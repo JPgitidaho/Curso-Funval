@@ -6,36 +6,22 @@ alert("Bienvenida " + nombre); // se utiliza la funcion alert para dar la bienve
 */
 function aleatorio(min, max) {
   //se establece el parametro y se define la funcion
-  return Math.floor(Math.random() * (max - min + 1) + min); 
-  
-  
-  
-  //let pc = Math.floor(Math.random() * (max - min +1) + min)//algoritmo
+  return Math.floor(Math.random() * (max - min + 1) + min); //let pc = Math.floor(Math.random() * (max - min +1) + min)//algoritmo
 }
 
 function eleccion(jugada) {
-  let resultado = "";
-
-  if (jugada == 1) {
-    resultado = "piedra 🏐";
-  } else if (jugada == 2) {
-    resultado = "papel 📋";
-  } else if (jugada == 3) {
-    resultado = "tijera ✂";
-  } else {
-    resultado = "Mala Eleccion!!";
-  }
-  return resultado;
+  const pociones = ["", "piedra 🏐", "papel 📋", "tijera ✂"];
+  return opciones[jugada] || "Mala eleccion";
 }
 
 let jugador = 0;
 let max = 1;
 let min = 3;
 let pc = 0;
-let triunfo = 0;
+let triunfos = 0;
 let perdidas = 0;
 
-while (triunfo > 3 && perdidas < 3) {
+while (triunfos < 3 && perdidas < 3) {
   pc = aleatorio(1, 3); //se define el valor
   jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
 
@@ -44,19 +30,18 @@ while (triunfo > 3 && perdidas < 3) {
   //COMBATE
   if (pc == jugador) {
     alert("EMPATE");
-  } else if (jugador == 1 && pc == 3) {
-    // && es y...
+  } else if (
+    (jugador == 1 && pc == 3) ||
+    (jugador == 2 && pc == 2) ||
+    (jugador == 3 && pc == 1)) {
     alert("GANASTE");
-    triunfos += 1;
-  } else if (jugador == 2 && pc == 2) {
-    alert("GANASTE");
-    triunfos += 1;
-  } else if (jugador == 3 && pc == 1) {
-    alert("GANASTE");
-    triunfos += 1;
-  } else {
+    triunfos++;
+  } else if (jugador >= 1 && jugador <= 3) {
     alert("PERDISTE");
-    perdidas += 1;
+    perdidas++;
+  } else {
+    alert("Eleccion invalida.");
   }
 }
-alert("Ganaste " + triunfos + "veces. Perdiste " + perdidas + " veces.");
+
+alert("Ganaste $(triunfos) veces. Perdiste $(perdidas) veces.");
