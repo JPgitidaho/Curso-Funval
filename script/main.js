@@ -110,7 +110,7 @@ if (dinero > 0) {
 0-11 Primaria
 12-17 Jovenes
 18-35 Jas
-36--- Adulto */
+36--- Adulto 
 
 let edad = prompt("Ingresa tu edad");
 edad = parseInt(edad); // Convertir a número
@@ -132,3 +132,144 @@ if (edad >= 0) {
 } else {
   alert("Edad inválida");
 }
+
+// pide la edad y si es mayor de 18 años indica que ya puede conducir
+function evaluarEdad() {
+  let edad = parseInt(document.getElementById("edad").value);
+  let respuesta = document.getElementById("respuesta");
+
+  if (edad >= 18) 
+    respuesta.textContent = "Ya eres mayor de Edad y puedes conducir"
+  else {
+respuesta.textContent ="No puedes conducir aun en Chile"
+  }
+}
+  
+let edad =prompt("Ingresa tu edad")
+
+if(Number(edad) == edad) {
+  if (edad > 18) {
+    alert("Puedes conducir")
+  }else {
+  alert("No puedes conducir")
+
+}
+}
+
+let nota;
+
+do {
+  nota = prompt("Ingresa tu nota (0 a 10):");
+
+  if (nota !== null) { // Verifica que no se haya presionado "Cancelar"
+    if (!isNaN(nota) && nota.trim() !== "") {
+      nota = Number(nota);
+      
+      if (nota >= 0 && nota <= 10) {
+        if (nota < 3) {
+          alert("Muy deficiente");
+        } else if (nota < 5) {
+          alert("Insuficiente");
+        } else if (nota < 6) {
+          alert("Suficiente");
+        } else if (nota < 7) {
+          alert("Bien");
+        } else if (nota < 9) {
+          alert("Notable");
+        } else {
+          alert("Sobresaliente");
+        }
+      } else {
+        alert("La nota debe estar entre 0 y 10.");
+      }
+    } else {
+      alert("Introduce un número válido.");
+    }
+  }
+
+} while (nota !== null); // Se repite hasta que se presione Cancelar
+
+
+
+Realiza un script que pida cadenas de texto  
+hasta que se pulse “cancelar”. Al salir con
+ “cancelar” deben mostrarse todas las cadenas 
+ concatenadas con un guión -.
+ var resultado = ""
+ do {
+  var texto = prompt("Introduce una oracion")
+  if(resultado == "") {
+    resultado = resultado + texto;
+  }
+  else {resultado = resultado + "-" + texto
+  }
+ }while (texto !== null);
+
+alert("Resultado final: " + resultado);
+
+let i = 0;
+
+while (i < 11) {
+  if (i == 5) {
+    break;
+  }
+
+  console.log("Iteración número ", i);
+  i = i + 1;
+}
+
+console.log("Bucle finalizado.")*/
+
+
+
+// Realiza un script que escriba una pirámide del 1 al 30:
+/*  
+//Si haces clic en "Cancelar", prompt() devuelve null.
+if (limite !== null &&  
+ 
+//"es un número válido".
+!isNaN(limite) &&   
+ 
+//elimina los espacios en blanco antes o después del texto    
+limite.trim() !== "") { 
+   
+//convierte el texto en un número entero.    
+limite = parseInt(limite);
+        
+// Luego, se crea la variable salida = "" para comenzar a construir la pirámide.
+let salida = "";*/
+
+/*   
+//Comienza en 1 
+for (let i = 1;       
+
+//Repite mientras i sea menor o igual que el número que escribió el usuario      
+i <= limite;   
+    
+//En cada vuelta, suma 1 a i (va de 1 en 1)
+i++) {                
+//Convierte el número i a texto.      
+salida += String(i)   
+ 
+//Repite ese texto i veces.
+.repeat(i)            
+
+//Agrega un salto de línea al final. Esto hace que cada fila de la pirámide esté en una línea diferente.
+ + "\n";               
+}*/
+    function generarPiramide() {
+      let limite = prompt("¿Hasta qué número quieres construir la pirámide?");
+
+      if (limite !== null && !isNaN(limite) && limite.trim() !== "") {
+        limite = parseInt(limite);
+        let salida = "";
+
+        for (let i = 1; i <= limite; i++) {
+          salida += String(i).repeat(i) + "\n";
+        }
+
+        document.getElementById("resultado").textContent = salida;
+      } else {
+        alert("Debes ingresar un número válido.");
+      }
+    }
