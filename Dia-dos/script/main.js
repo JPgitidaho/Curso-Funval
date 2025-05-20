@@ -220,8 +220,6 @@ while (i < 11) {
 
 console.log("Bucle finalizado.")*/
 
-
-
 // Realiza un script que escriba una pirámide del 1 al 30:
 /*  
 //Si haces clic en "Cancelar", prompt() devuelve null.
@@ -256,15 +254,15 @@ salida += String(i)
 
 //Agrega un salto de línea al final. Esto hace que cada fila de la pirámide esté en una línea diferente.
  + "\n";               
-}*/
-    function generarPiramide() {
+}
+function generarPiramide() {
       let limite = prompt("¿Hasta qué número quieres construir la pirámide?");
 
       if (limite !== null && !isNaN(limite) && limite.trim() !== "") {
         limite = parseInt(limite);
         let salida = "";
 
-        for (let i = 1; i <= limite; i++) {
+        for (let i = limite; i >=1 ; i--) {
           salida += String(i).repeat(i) + "\n";
         }
 
@@ -273,3 +271,4 @@ salida += String(i)
         alert("Debes ingresar un número válido.");
       }
     }
+*/

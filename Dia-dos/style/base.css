@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color: aliceblue;
+}
+
+header {
+    background-color: red;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.pelicula {
+    background-color: #7777;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
