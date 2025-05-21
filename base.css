@@ -19,12 +19,12 @@ body {
 li,
 a {
   text-align: left;
-  color: black;
+  color: var(--blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--blue-ligth);
+  color: var(--green);
 }
 
 .card {
