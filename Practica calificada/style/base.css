@@ -49,7 +49,6 @@ header {
   background: linear-gradient(135deg, #6dd5ed, #2193b0);
   color: white;
   text-align: center;
-  border-bottom: 5px solid #2980b9;
 }
 
 img {
@@ -61,7 +60,7 @@ header h1 {
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.2em;/*permite mantener una coherencia visual con respecto a su elemento padre*/
   margin-top: 10px;
 }
 
