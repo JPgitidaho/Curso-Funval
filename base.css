@@ -1,25 +1,44 @@
+:root {
+  --white: #fff;
+  --black: black;
+  --grey: #353535;
+  --blue: #162a38;
+  --blue-ligth: #3a6e939f;
+  --green: #346361;
+  --pink: #D9D9D9;
+}
+
+
 body {
   font-family: sans-serif;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: var(--pink);
   text-align: center;
 }
 
-li, a {
-    text-align: left;
+li,
+a {
+  text-align: left;
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 a:hover {
-  color: #0056b3;
+  color: var(--blue-ligth);
 }
+
 .card {
   border-radius: 8px;
-  box-shadow: 0 0 10px #323232;
+  box-shadow: 0 0 10px #D9D9D9;
   padding: 15px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px #162a38;
 }
+
+h1,
+h2 {
+  background: linear-gradient(to bottom, var(--blue-ligth), var(--pink), var(--pink), var(--blue-ligth));
+}
+
 main {
 
   display: grid;
