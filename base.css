@@ -12,19 +12,19 @@
 body {
   font-family: sans-serif;
   padding: 20px;
-  background-color: var(--pink);
+  background-color: var(--white);
   text-align: center;
 }
 
 li,
 a {
   text-align: left;
-  color: var(--blue);
+  color: var(--green);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--green);
+  color: var(--black);
 }
 
 .card {
