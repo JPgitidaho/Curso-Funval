@@ -21,7 +21,7 @@ body {
   padding: 30px 20px;
   width: 350px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #3a0ca3;
+  box-shadow: 0 0 20px #ad90f1;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@ h2 {
 }
 
 .socials {
-  margin-top: 30px;
+  margin-top: 200px;
 }
 
 .socials .icons {
