@@ -5,20 +5,24 @@
   --blue: #162a38;
   --blue-ligth: #3a6e939f;
   --green: #346361;
-  --pink: #D9D9D9;
+  --pink: #d9d9d9;
 }
 
 body {
+  background-image: url("./sung-jinwoo-dragon.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat;
   font-family: sans-serif;
   padding: 20px;
   background-color: var(--white);
   text-align: center;
+    
 }
 
 li,
 a {
   text-align: left;
-  color: var(--green);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -27,19 +31,24 @@ a:hover {
 }
 
 .card {
+  background-color:rgba(0, 0, 0, 0.452);
   border-radius: 8px;
-  box-shadow: 0 0 10px #D9D9D9;
   padding: 15px;
-  box-shadow: 5px 5px 10px #162a38;
+  box-shadow: 5px 10px 10px #162a38;
 }
 
 h1,
 h2 {
-  background: linear-gradient(to bottom, var(--blue-ligth), var(--pink), var(--pink), var(--blue-ligth));
+  background: linear-gradient(
+    to bottom,
+    var(--blue-ligth),
+    var(--pink),
+    var(--pink),
+    var(--blue-ligth)
+  );
 }
 
 main {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
