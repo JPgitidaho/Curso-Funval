@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .login-container {
@@ -70,7 +70,7 @@ h2 {
 }
 
 .register {
-    margin-left: 10px;
+  margin-left: 10px;
   background: #333;
   color: white;
 }
@@ -100,7 +100,10 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-.fa-social:hover i, .login:hover, .register:hover,.login-form input[type="email"]:hover,
+.fa-social:hover i,
+.login:hover,
+.register:hover,
+.login-form input[type="email"]:hover,
 .login-form input[type="password"]:hover {
   background-color: purple;
 }
