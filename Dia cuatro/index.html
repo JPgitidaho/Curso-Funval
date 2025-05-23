@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main class="container">
+      <form class="formulario">
+        <div class="hijo-mayor">
+          <p>Nombre:</p>
+          <input type="text" placeholder="ingresa tu nombre" />
+        </div>
+        <div class="segundo-hijo">
+          <div>
+            <p>apellido paterno</p>
+            <input type="text" placeholder="ingresa tu ap paterno" />
+          </div>
+          <div>
+            <p>apellido materno</p>
+            <input type="text" placeholder="ingresa tu ap materno" />
+          </div>
+        </div>
+        <div class="tercer-hijo">
+          <div class="correo">
+            <p>Correo</p>
+            <input
+              type="email"
+              placeholder="ingresa tu correo"
+              class="input-correo"
+            />
+          </div>
+          <div class="año">
+            <p class="parrafo-año">Año de nacimiento</p>
+            <input type="number" placeholder="año" class="input-año" />
+          </div>
+        </div>
+        <div class="ultimo-hijo">
+          <button>ENVIAR DATOS</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

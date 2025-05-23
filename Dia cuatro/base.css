@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: solid 1px red; */
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Playfair Display";
+  color: aliceblue;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: opx 10px 20px solid violet;
+}
+.formulario {
+   border-radius: 10px;
+  box-shadow: 0 0 20px #ad90f1;
+  height: 300px;
+  width: 380px;
+  background-image: url("./images/thumb-1920-1372163.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 60px;
+}
+.hijo-mayor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.segundo-hijo {
+  /* border: solid 1px red; */
+  display: flex;
+  gap: 10px;
+  /* padding-top: 4px; */
+  margin-top: 4px;
+}
+.tercer-hijo {
+  /* border: solid 1px red; */
+  display: flex;
+  gap: 5px;
+  margin-top: 7px;
+}
+.correo {
+  /*  border: solid 1px red; */
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.año {
+  /* border: solid 1px red; */
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.parrafo-año {
+  width: 200px;
+}
+.input-correo {
+  width: 230px;
+}
+.input-año {
+  width: 104px;
+}
+.ultimo-hijo {
+  /* border: solid 1px red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: rgb(50, 105, 50);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}

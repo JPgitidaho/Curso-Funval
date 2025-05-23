@@ -1,4 +1,4 @@
-html{
+html {
   background-color: #111;
 }
 
@@ -8,14 +8,12 @@ body {
   background-color: #f2f2f2;
 }
 
-
 .top-bar {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px;
   text-align: center;
 }
-
 
 .navbar {
   background-color: #333;
@@ -43,12 +41,11 @@ body {
   background-color: #111;
 }
 
-
 .hero {
-  position: relative; 
+  position: relative;
   background-color: #fbe9db;
-  padding:100px 30px ;
-  min-height: 200px; 
+  padding: 100px 30px;
+  min-height: 200px;
 }
 
 .hero-text {
@@ -63,11 +60,10 @@ body {
 
 .hero-text p {
   margin: 0;
- 
 }
 
 .hero-text button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 14px 16px;
@@ -76,20 +72,20 @@ body {
   border-radius: 5px;
 }
 
-
 .hero-image img {
   width: 200px;
- height: auto;
+  height: auto;
   position: absolute;
-  right: 45px;      /* Se pega a la derecha con un margen */
-  top: 50%;         /* Posición vertical a mitad del contenedor */
-  transform: translateY(-50%); /* Ajuste hacia arriba para centrar verticalmente */
+  right: 45px; /* Se pega a la derecha con un margen */
+  top: 50%; /* Posición vertical a mitad del contenedor */
+  transform: translateY(
+    -50%
+  ); /* Ajuste hacia arriba para centrar verticalmente */
 }
 
 .content {
   background-color: white;
   padding: 20px;
-  
 }
 
 .content h2 {
