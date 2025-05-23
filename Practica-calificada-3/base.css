@@ -1,0 +1,116 @@
+body {
+  margin: 0px 300px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+
+.top-bar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0px 0px 0px 20px;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  justify-content: space-around;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #111;
+}
+
+
+.hero {
+  position: relative; 
+  background-color: #fbe9db;
+  padding:100px 30px ;
+  min-height: 200px; 
+}
+
+.hero-text {
+  margin: 10px;
+  max-width: 60%;
+  position: absolute;
+  top: 20px;
+}
+.hero-text h2 {
+  margin: 10px 0px;
+}
+
+.hero-text p {
+  margin: 0;
+ 
+}
+
+.hero-text button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.hero-image img {
+  width: 200px;
+ height: auto;
+  position: absolute;
+  right: 45px;      /* Se pega a la derecha con un margen */
+  top: 50%;         /* Posición vertical a mitad del contenedor */
+  transform: translateY(-50%); /* Ajuste hacia arriba para centrar verticalmente */
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+  
+}
+
+.content h2 {
+  margin: 15px 20px;
+}
+
+.text-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 20px;
+}
+
+.text-box p {
+  margin-bottom: 10px;
+}
+
+.text-box ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
