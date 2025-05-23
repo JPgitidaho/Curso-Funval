@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #220000;
+  z-index: 1000;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid pink;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  color: pink;
+}
+
+.logo {
+  padding: 20px;
+  font-size: 24px;
+  color: lightgreen;
+  font-weight: bold;
+}
+
+.main {
+  margin-top: 140px;
+  justify-content: space-around;
+  padding: 20px;
+  border: 2px solid green;
+}
+
+.box-green,
+.box-brown {
+  position: fixed;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 100px;
+}
+
+.box-green {
+  background-color: green;
+  top: 230px;
+  left: 100px;
+  z-index: 1;
+}
+
+.box-brown {
+  background-color: #442200;
+  top: 150px;
+  left: 200px;
+  z-index: 2;
+}
+
+.noticia {
+justify-self: right;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 2px solid pink;
+  padding: 10px;
+  text-align: center;
+  margin: 13px;
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+  border: 1px solid pink;
+  border-radius: 5px;
+}
+
+.noticia p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: pink;
+}
