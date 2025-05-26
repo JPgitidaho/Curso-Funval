@@ -83,3 +83,55 @@ justify-self: right;
   font-size: 16px;
   color: pink;
 }
+
+
+   .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      width: 300px;
+      padding: 40px;
+      gap: 20px;
+      border: 2px solid #2c7;
+      border-radius: 12px;
+      
+    }
+
+    .btn {
+      width: 80px;
+      height: 60px;
+      background-color: transparent;
+      border: 1px solid #2c7;
+      color: #2c7;
+      font-size: 2rem;
+      font-family: sans-serif;
+      text-align: center;
+      line-height: 60px;
+      border-radius: 8px;
+      
+    }
+
+
+/* Tablets (2 columnas): entre 481px y 700px */
+@media (max-width: 641px) {
+  .container {
+    width: 180px; /* para 2 columnas: 80 + 80 + 20 gap */
+  }
+
+  .btn {
+    width: 70px; /* para que quepan 2 botones más cómodos */
+  }
+}
+
+/* Móviles (1 columna): 480px o menos */
+@media (max-width: 480px) {
+  .container {
+    width: 80px; /* para 1 columna */
+  }
+
+  .btn {
+    width: 80px;
+  }
+}
+
