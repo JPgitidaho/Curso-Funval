@@ -1,0 +1,7 @@
+@keyframes zoomSlowGrow {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.5); }
+}
+.animate-zoomGrow {
+  animation: zoomSlowGrow 20s linear infinite;
+}

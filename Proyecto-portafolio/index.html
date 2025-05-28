@@ -5,87 +5,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ferdous | Full Stack Developer</title>
-  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="./imagenes/logo imagen.ico" type="image/x-icon">
 
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./tailwind.config.js">
 
 </head>
 
-<body class="font-sans  bg-black text-light">
+<body class="bg-gray-900 text-white">
 
   <!-- Header -->
-  <header class="flex justify-between items-center px-6 py-4 bg-blue-950 text-white">
-    <div class="text-2xl font-bold">Ferdous</div>
-    <nav class="space-x-6 hidden md:block">
-      <a href="#about" class="hover:text-highlight">About Me</a>
-      <a href="#skills" class="hover:text-highlight">Skills</a>
-      <a href="#projects" class="hover:text-highlight">Projects</a>
+  <header class="flex justify-between items-center p-4 bg-gray-950  bg- shadow-lg sticky top-0 z-50">
+    <div><img src="./imagenes/LOGO.png" class="w-16 h-16" alt="Logo" /></div>
+    <nav class="space-x-4 text-sm md:text-base flex">
+      <a href="#inicio"
+        class="relative text-white py-2 transition-all hover:text-yellow-400 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-1 after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+        aria-current="page">
+        Inicio
+      </a>
+      <a href="#habilidades"
+        class="relative text-white py-2 transition-all hover:text-yellow-400 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-1 after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+        Habilidades
+      </a>
+      <a href="#proyectos"
+        class="relative text-white py-2 transition-all hover:text-yellow-400 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-1 after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+        Proyectos
+      </a>
+      <a href="#contacto"
+        class="relative text-white py-2 transition-all hover:text-yellow-400 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-1 after:bg-yellow-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+        Contacto
+      </a>
     </nav>
-    <a href="#contact"
-      class="bg-highlight text-dark px-4 py-2 rounded-lg font-semibold hover:bg-neonGreen transition">Contact</a>
+
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-20 text-white">
-    <div class="flex justify-center mb-6">
-      <img src="./imagenes/thumb-1920-1372163.jpeg" alt="Foto del desarrollador"
-        class="rounded-full shadow-xl w-36 h-36 object-cover" />
-    </div>
-    <h1 class="text-4xl md:text-5xl font-bold">I'm <span class="text-highlight">Ferdous Ahmed</span><br />Full Stack
-      Developer</h1>
-    <p class="mt-4 text-softGray">My Expertise: Backend 80%, Frontend 92%</p>
-    <button class="mt-6 bg-highlight text-dark px-6 py-3 rounded-xl font-bold">MY PROJECTS</button>
-  </section>
+  <section class="relative h-screen overflow-hidden">
 
-  <!-- About -->
-  <section id="about" class="text-center py-16 px-6">
-    <h2 class="text-3xl font-bold text-amber-200 mb-4">WHO AM I ?</h2>
-    <p class="max-w-xl mx-auto text-softGray">Soy un desarrollador full stack... Me gusta programar y jugar videojuegos.
-    </p>
-    <button class="mt-6 bg-highlight text-dark px-6 py-3 rounded-xl font-bold">SHOW MY PROJECTS</button>
-  </section>
+<img src="./imagenes/11.jpg" alt="colores en movimiento"
+  class="absolute inset-0 w-full h-full object-cover z-30 animate-zoomGrow" />
 
-  <!-- Skills -->
-  <section id="skills" class="py-16 px-6 bg-deepBlue text-white">
-    <h2 class="text-3xl font-bold text-center mb-10">MY SKILLS</h2>
-    <div class="grid grid-cols-3 md:grid-cols-5 gap-6 justify-items-center">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-      <div>React</div>
-      <div>Next.js</div>
-      <div>Node.js</div>
-      <div>Tailwind</div>
-      <div>MongoDB</div>
-    </div>
-    <div class="text-center mt-8">
-      <p class="text-2xl font-bold">4 Years Experience Working</p>
-      <button class="mt-4 bg-highlight text-dark px-4 py-2 rounded">DOWNLOAD MY CV</button>
+    <div class="relative z-40 flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold">Hola, soy <span class="text-yellow-400">JP</span></h1>
+      <p class="mt-4 text-lg text-gray-200">Desarrollador Frontend apasionada</p>
+      <a href="#proyectos" class="mt-6 bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold">Ver Proyectos</a>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">THE WORKS CLOSEST TO MY HEART</h2>
-    <div class="flex flex-wrap gap-4 justify-center">
-      <div class="w-48 h-64 bg-white text-dark rounded-xl flex items-center justify-center">Project 1</div>
-      <div class="w-48 h-64 bg-white text-dark rounded-xl flex items-center justify-center">Project 2</div>
-      <div class="w-48 h-64 bg-white text-dark rounded-xl flex items-center justify-center">Project 3</div>
+
+  <!-- ¿Quién soy? -->
+  <section class="py-16 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">¿Quién soy?</h2>
+      <p class="text-gray-300">Soy un desarrollador con experiencia en tecnologías web modernas. Me encanta resolver
+        problemas con código y siempre estoy aprendiendo nuevas herramientas.</p>
+
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 px-6">
-    <h2 class="text-3xl font-bold text-amber-50 text-center  mb-8">LET’S HAVE A CHAT</h2>
-    <form class="max-w-xl mx-auto space-y-4 ">
-      <input type="text" placeholder="Your Name"
-        class="w-full p-4 rounded-lg bg-white text-black placeholder-softGray" />
-      <input type="email" placeholder="Email Address"
-        class="w-full p-4 rounded-lg bg-white text-black placeholder-softGray" />
-      <textarea placeholder="Chat here..."
-        class="w-full p-4 rounded-lg bg-white text-black placeholder-softGray h-40"></textarea>
-      <button type="submit" class="w-full bg-highlight text-dark py-3 rounded-lg font-bold">SUBMIT HERE</button>
-    </form>
+  <!-- Habilidades -->
+  <section id="habilidades" class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Habilidades</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <img src="icons/html.svg" class="w-12 mx-auto mb-2" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="icons/css.svg" class="w-12 mx-auto mb-2" />
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src="icons/js.svg" class="w-12 mx-auto mb-2" />
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="icons/tailwind.svg" class="w-12 mx-auto mb-2" />
+          <p>Tailwind</p>
+        </div>
+      </div>
+
+    </div>
   </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-16 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Proyectos Destacados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">          <img src="./imagenes/chamber.png" alt="Proyecto 1" class="w-100% h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Proyecto Uno</h3>
+            <p class="text-gray-300">Breve descripción del proyecto.</p>
+            <a href="https://github.com/JPgitidaho/Chamber-of-Commerce-Project" class="text-highlight underline">Ver
+              más</a>
+          </div>
+        </div>
+<div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">          <img src="./imagenes/GIT.png" alt="Proyecto 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Proyecto Dos</h3>
+            <p class="text-gray-300">Breve descripción del proyecto.</p>
+            <a href="https://github.com/tuusuario/proyecto1" class="text-highlight underline">Ver más</a>
+          </div>
+        </div>
+<div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">          <img src="imagenes/imagen-presentacion.png" alt="Proyecto 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Proyecto Tres</h3>
+            <p class="text-gray-300">Breve descripción del proyecto.</p>
+            <a href="https://jpgitidaho.github.io/Cozumel-Project/" class="text-highlight underline">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16">
+    <div class="max-w-xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
+      <form class="space-y-6">
+        <input type="text" placeholder="Tu Nombre" class="w-full p-3 rounded-lg bg-gray-700 text-white" required>
+        <input type="email" placeholder="Correo Electrónico" class="w-full p-3 rounded-lg bg-gray-700 text-white"
+          required>
+        <textarea placeholder="Tu Mensaje" class="w-full p-3 rounded-lg bg-gray-700 text-white" rows="5"
+          required></textarea>
+        <button type="submit" class="w-full bg-highlight text-dark py-3 rounded-lg font-bold">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
 </body>
 
 </html>
