@@ -1057,6 +1057,11 @@
       color: var(--color-yellow-400);
     }
   }
+  .md\:col-span-1 {
+    @media (width >= 48rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -1087,6 +1092,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .lg\:row-span-2 {
+    @media (width >= 64rem) {
+      grid-row: span 2 / span 2;
     }
   }
   .lg\:grid-cols-3 {
