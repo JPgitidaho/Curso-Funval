@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="dark h-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+</head>
+
+<body class="h-full flex flex-col">
+    <header class="h-[15vh] flex items-center justify-between px-6 bg-white border-b dark:bg-gray-900">
+        <ul class="text-black flex gap-4 text-lg sm:text-xl md:text-2xl">
+            <li>menu</li>
+            <li>opciones</li>
+            <li>tablas</li>
+            <li>usuarios</li>
+        </ul>
+        <div class="h-full">
+            <img src="./imag/logo sud.png" alt="Logo" class="h-full object-contain" />
+        </div>
+    </header>
+
+    <main class="flex-grow bg-gray-400 p-4 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <img src="./imag/jesucristo.jpeg" alt="" class="w-full object-cover rounded-md" />
+            <img src="./imag/jesucristo.jpeg" alt="" class="w-full object-cover rounded-md" />
+            <img src="./imag/jesucristo.jpeg" alt="" class="w-full object-cover rounded-md" />
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="lg:w-1/2 flex flex-col gap-4">
+                <h1 class="font-bold text-2xl md:text-3xl">Título de la noticia</h1>
+                <p class="text-sm md:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eum
+                    quasi aliquam odit delectus temporibus hic, perferendis asperiores
+                    suscipit ullam. Nam enim inventore reprehenderit sapiente quidem in
+                    maiores. Praesentium, pariatur!
+                </p>
+            </div>
+            <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-white">
+                <div class="bg-slate-800 flex items-center justify-center p-6 rounded-md">
+                    Caja 1
+                </div>
+                <div class="bg-slate-800 flex items-center justify-center p-6 rounded-md">
+                    Caja 2
+                </div>
+                <div class="bg-slate-800 flex items-center justify-center p-6 rounded-md">
+                    Caja 3
+                </div>
+                <div class="bg-slate-800 flex items-center justify-center p-6 rounded-md">
+                    Caja 4
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-slate-900 py-8 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 justify-items-center">
+            <button type="button"
+                class="flex items-center gap-2 text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-4 py-2.5 dark:focus:ring-[#3b5998]/55">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" />
+                </svg>
+                Facebook
+            </button>
+        </div>
+    </footer>
+</body>
+
+</html>
