@@ -1,3 +1,64 @@
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #0a192f;
+      background-image: radial-gradient(circle at var(--x, var(--y)), rgba(255, 255, 255, 0.15), transparent 50%);
+      transition: background-position 0.1s;
+      color: #ccd6f6;
+    }
+    
+    .hover-glow {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hover-glow:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(234, 179, 8, 0.6);
+    }
+    nav a {
+      position: relative;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      background-color: #facc15;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    button, .btn-animate {
+      transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s;
+    }
+    button:hover, .btn-animate:hover {
+      background-color: #facc15;
+      color: #0a192f;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(234, 179, 8, 0.7);
+    }
+    .letter-animate span {
+      display: inline-block;
+      transition: transform 0.3s, text-shadow 0.3s;
+    }
+    .letter-animate span:hover {
+      transform: translateY(-5px) rotate(5deg);
+      text-shadow: 0 0 20px rgba(234, 179, 8, 0.9);
+    }
+    input, textarea {
+      transition: box-shadow 0.3s;
+    }
+    input:hover, textarea:hover, input:focus, textarea:focus {
+      box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+    }
+
 @keyframes zoomSlowGrow {
   0% { transform: scale(1); }
   100% { transform: scale(1.5); }
