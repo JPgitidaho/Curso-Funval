@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-tM54a0ljlwH7XpU8XQ7v6NO5KQZp9OdIH20JDGZXfD6UytFk9Rff3TXApWtE1F+TkikGoNqv4IoElM9L24BIIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Juanita Pérez - Portafolio</title>
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="./base.css">
@@ -15,8 +17,12 @@
 
   <header class="p-6 flex justify-between items-center bg-gray-900 shadow-lg sticky top-0 z-50">
     <h1 class="text-2xl font-bold text-yellow-400 letter-animate">
-      <span>J</span><span>u</span><span>a</span><span>n</span><span>i</span><span>t</span><span>a</span>
-      <span>P</span><span>é</span><span>r</span><span>e</span><span>z</span>
+<div class="relative inline-block text-6xl font-extrabold">
+ 
+  <span class="absolute top-1 left-1 text-purple-300 opacity-60 select-none">[JP]</span>
+
+  <span class="relative text-yellow-400">[JP]</span>
+</div>
     </h1>
     <nav class="space-x-6">
       <a href="#inicio">Inicio</a>
@@ -27,7 +33,7 @@
   </header>
 
   <main class="p-8 space-y-40 md:space-y-52 max-w-6xl mx-auto">
-    <section id="inicio" class="text-center animate-fade-in pt-20 md:pt-32 pb-20 md:pb-32">
+    <section id="inicio" class=" ease-in-out slide-in-left text-center animate-fade-in pt-20 md:pt-32 pb-20 md:pb-32">
       <h2 class="text-4xl md:text-5xl font-bold mb-4 letter-animate">
         <span>¡</span><span>H</span><span>o</span><span>l</span><span>a</span><span>!</span>
         <span>S</span><span>o</span><span>y</span> <span class="text-yellow-400">J</span><span
@@ -44,8 +50,10 @@
         Proyectos</a>
     </section>
 
-    <section id="habilidades" class="text-center py-12 bg-[#0a192f]">
-      <h2 class="text-4xl font-bold text-yellow-400 mb-12">MIS HABILIDADES</h2>
+    <section id="habilidades" class="opacity-0 -translate-x-12 transition-all duration-700 ease-in-out slide-in-right text-center py-12 bg-[#0a192f]">
+<h2 class="text-4xl font-bold text-yellow-400 mb-12 hover:text-yellow-200 hover:scale-105 hover:brightness-125 hover:shadow-lg active:text-white transition ease-in-out duration-300">
+  MIS HABILIDADES
+</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center max-w-4xl mx-auto">
         <div class="bg-gray-800 p-6 rounded-lg hover-glow">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
@@ -77,30 +85,31 @@
       </div>
     </section>
 
-    <section id="proyectos" class="animate-fade-in pt-20 md:pt-32 pb-20 md:pb-32">
-      <h3 class="text-3xl mb-6 text-center letter-animate">
-        <span>P</span><span>r</span><span>o</span><span>y</span><span>e</span><span>c</span><span>t</span><span>o</span><span>s</span>
-      </h3>
+    <section id="proyectos" class="slide-in-left text-center py-12 bg-[#0a192f]">
+<h3 class="text-4xl font-bold text-yellow-400 mb-12 letter-animate hover:text-yellow-200 hover:scale-105 hover:brightness-125 hover:shadow-lg active:text-white transition ease-in-out duration-300">
+  PROYECTOS
+</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <div class="bg-gray-800 rounded-lg overflow-hidden hover-glow">
           <img src="./imagenes/web-page.png" alt="Proyecto 1" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">Portafolio Personal</h4>
+            <h4 class="text-xl font-semibold mb-2">Proyecto</h4>
             <a href="https://jpgitidaho.github.io/Cozumel-Project/" class="text-yellow-400 underline ">Ver más</a>
           </div>
         </div>
         <div class="bg-gray-800 rounded-lg overflow-hidden hover-glow">
           <img src="./imagenes/GIT.png" alt="Proyecto 2" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">Gestor de Tareas</h4>
+            <h4 class="text-xl font-semibold mb-2">Plataforma github</h4>
             <a href="https://github.com/JPgitidaho" class="text-yellow-400 underline ">Ver más</a>
           </div>
         </div>
         <div class="bg-gray-800 rounded-lg overflow-hidden hover-glow">
           <img src="./imagenes/chamber.png" alt="Proyecto 3" class="w-full h-48 object-cover">
           <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">Blog Personal</h4>
-            <a href="https://jpgitidaho.github.io/Chamber-of-Commerce-Project/" class="text-yellow-400 underline ">Ver más</a>
+            <h4 class="text-xl font-semibold mb-2">Proyecto</h4>
+            <a href="https://jpgitidaho.github.io/Chamber-of-Commerce-Project/" class="text-yellow-400 underline ">Ver
+              más</a>
           </div>
         </div>
         <div class="bg-gray-800 rounded-lg overflow-hidden hover-glow">
@@ -113,10 +122,10 @@
       </div>
     </section>
 
-    <section id="contacto" class="animate-fade-in pt-20 md:pt-32 pb-20 md:pb-32">
-      <h3 class="text-3xl mb-6 text-center letter-animate">
-        <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>o</span>
-      </h3>
+    <section id="contacto" class="slide-in-right text-center py-12 bg-[#0a192f]">
+<h3 class="text-4xl font-bold text-yellow-400 mb-12 letter-animate hover:text-yellow-200 hover:scale-105 hover:brightness-125 hover:shadow-lg active:text-white transition ease-in-out duration-300">
+  CONTACTO
+</h3>
       <form class="space-y-4 max-w-lg mx-auto">
         <input type="text" placeholder="Nombre"
           class="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
@@ -130,8 +139,11 @@
     </section>
   </main>
 
-   <script src="./script.js"></script>
+  <script src="./script.js"></script>
 
 </body>
+<footer class="bg-gray-900 py-6 mt-20 flex flex-col items-center space-y-4">
 
+  <p class="text-sm text-gray-500">&copy; 2025 Juanita Pérez. Todos los derechos reservados.</p>
+</footer>
 </html>
