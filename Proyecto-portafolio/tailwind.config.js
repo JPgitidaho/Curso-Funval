@@ -35,5 +35,41 @@ module.exports = {
   plugins: [],
 }
 
+// tailwind.config.js
+
+module.exports = {
+  content: [
+    './index.html',
+    './imagenes/*.html',
+    './*.js',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        dark: '#0a192f',
+        light: '#ccd6f6',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1), transparent 40%)',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'bounce': {
+          '0%, 100%': { transform: 'translateY(-10%)' },
+          '50%': { transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 1s ease-in forwards',
+        'bounce': 'bounce 1s infinite',
+      },
+    },
+  },
+  plugins: [],
+};
+
 
 
