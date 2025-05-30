@@ -10,59 +10,42 @@
 
 @keyframes shadow-circle {
   0% {
-    box-shadow:
-      0 -5px 15px rgba(138, 43, 226, 0.8),
-      5px 0 15px rgba(138, 43, 226, 0),
-      0 5px 15px rgba(138, 43, 226, 0),
-      -5px 0 15px rgba(138, 43, 226, 0);
+    box-shadow: 0 -5px 15px rgba(138, 43, 226, 0.8),
+                5px 0 15px rgba(138, 43, 226, 0),
+                0 5px 15px rgba(138, 43, 226, 0),
+                -5px 0 15px rgba(138, 43, 226, 0);
   }
   25% {
-    box-shadow:
-      0 -5px 15px rgba(138, 43, 226, 0),
-      5px 0 15px rgba(138, 43, 226, 0.8),
-      0 5px 15px rgba(138, 43, 226, 0),
-      -5px 0 15px rgba(138, 43, 226, 0);
+    box-shadow: 0 -5px 15px rgba(138, 43, 226, 0),
+                5px 0 15px rgba(138, 43, 226, 0.8),
+                0 5px 15px rgba(138, 43, 226, 0),
+                -5px 0 15px rgba(138, 43, 226, 0);
   }
   50% {
-    box-shadow:
-      0 -5px 15px rgba(138, 43, 226, 0),
-      5px 0 15px rgba(138, 43, 226, 0),
-      0 5px 15px rgba(138, 43, 226, 0.8),
-      -5px 0 15px rgba(138, 43, 226, 0);
+    box-shadow: 0 -5px 15px rgba(138, 43, 226, 0),
+                5px 0 15px rgba(138, 43, 226, 0),
+                0 5px 15px rgba(138, 43, 226, 0.8),
+                -5px 0 15px rgba(138, 43, 226, 0);
   }
   75% {
-    box-shadow:
-      0 -5px 15px rgba(138, 43, 226, 0),
-      5px 0 15px rgba(138, 43, 226, 0),
-      0 5px 15px rgba(138, 43, 226, 0),
-      -5px 0 15px rgba(138, 43, 226, 0.8);
+    box-shadow: 0 -5px 15px rgba(138, 43, 226, 0),
+                5px 0 15px rgba(138, 43, 226, 0),
+                0 5px 15px rgba(138, 43, 226, 0),
+                -5px 0 15px rgba(138, 43, 226, 0.8);
   }
   100% {
-    box-shadow:
-      0 -5px 15px rgba(138, 43, 226, 0.8),
-      5px 0 15px rgba(138, 43, 226, 0),
-      0 5px 15px rgba(138, 43, 226, 0),
-      -5px 0 15px rgba(138, 43, 226, 0);
+    box-shadow: 0 -5px 15px rgba(138, 43, 226, 0.8),
+                5px 0 15px rgba(138, 43, 226, 0),
+                0 5px 15px rgba(138, 43, 226, 0),
+                -5px 0 15px rgba(138, 43, 226, 0);
   }
 }
 
-.card {
-  background-color: rgba(0, 0, 0, 0.452);
-  border-radius: 8px;
-  padding: 15px;
-  animation: shadow-circle 4s linear infinite;
-  width: 80%;
-}
-
-
 body {
+  box-sizing: border-box;
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(to bottom, var(--blue), var(--black));
-  background-size: cover; 
-  background-repeat: no-repeat;
   font-family: sans-serif;
-  padding: 20px;
   text-align: center;
   margin: 0;
 }
@@ -73,7 +56,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  text-align: center;
   padding: 20px;
 }
 
@@ -97,7 +79,6 @@ a:hover {
   color: var(--blue-ligth);
 }
 
-
 h1,
 h2 {
   background: linear-gradient(
@@ -109,22 +90,34 @@ h2 {
   );
   margin-top: 0;
   padding: 10px;
-   animation: shadow-circle 4s linear infinite;
+  width: 100%;
+  animation: shadow-circle 4s linear infinite;
+}
+h1{
+    width: 60%;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
-  margin-left: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.452);
+  border-radius: 8px;
+  padding: 20px;
+  animation: shadow-circle 4s linear infinite;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
-  main {
-    grid-template-columns: 1fr;
-    margin-left: 0;
-  }
-
   .hero img {
     width: 150px;
     height: 150px;
@@ -144,11 +137,6 @@ main {
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10px;
-  }
-
   .hero img {
     width: 180px;
     height: 180px;
