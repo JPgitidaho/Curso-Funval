@@ -44,11 +44,11 @@ const mensajeInicio = document.getElementById('mensaje-inicio');
 
 const videosData = {
   "video-igris": `<video autoplay muted loop playsinline>
-                   <source src="./fuegoazul.mp4" type="video/webm">
+                   <source src="http://www.w3.org/2000/svg" type="video/webm">
                    Tu navegador no soporta video.
                  </video>`,
   "video-jinwoo": `<video autoplay muted loop playsinline>
-                   <source src="./videofuego.mp4" type="video/webm">
+                   <source src="http://www.w3.org/2000/svg" type="video/webm">
                    Tu navegador no soporta video.
                  </video>`,
   "video-rey": `<svg xmlns="http://www.w3.org/2000/svg" class="w-64 h-64 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
