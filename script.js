@@ -48,7 +48,7 @@ const videosData = {
                    Tu navegador no soporta video.
                  </video>`,
   "video-jinwoo": `<video autoplay muted loop playsinline>
-                   <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/bee.webm" type="video/webm">
+                   <source src="./Sung jin-woo vs beru (pelea completa) _ solo Leveling (anime)(1080P_HD).mp4" type="video/webm">
                    Tu navegador no soporta video.
                  </video>`,
   "video-rey": `<svg xmlns="http://www.w3.org/2000/svg" class="w-64 h-64 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
