@@ -32,8 +32,7 @@ function animarDesdeBoton() {
 }
 
 explorarBtn.addEventListener('click', () => {
-  clickSound.currentTime = 0;
-  clickSound.play();
+
   document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
   setTimeout(animarDesdeBoton, 600);
 });
