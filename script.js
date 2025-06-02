@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 const cards = document.querySelectorAll('.card');
-const clickSound = document.getElementById('click-sound');
+
 const explorarBtn = document.getElementById('explorar-btn');
 
 // Ocultar tarjetas al inicio
