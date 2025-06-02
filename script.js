@@ -43,14 +43,12 @@ const contenedor = document.getElementById('video-container');
 const mensajeInicio = document.getElementById('mensaje-inicio');
 
 const videosData = {
-  "video-igris": `<video autoplay muted loop playsinline>
-                   <source src="http://www.w3.org/2000/svg" type="video/webm">
-                   Tu navegador no soporta video.
-                 </video>`,
-  "video-jinwoo": `<video autoplay muted loop playsinline>
-                   <source src="http://www.w3.org/2000/svg" type="video/webm">
-                   Tu navegador no soporta video.
-                 </video>`,
+  "video-igris": `<svg xmlns="http://www.w3.org/2000/svg" class="w-64 h-64 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                 <path d="M12 2 L15 8 L21 9 L17 14 L18 21 L12 18 L6 21 L7 14 L3 9 L9 8 Z" stroke="cyan" stroke-width="2" fill="none" />
+               </svg>`,
+  "video-jinwoo": `<svg xmlns="http://www.w3.org/2000/svg" class="w-64 h-64 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                 <path d="M12 2 L15 8 L21 9 L17 14 L18 21 L12 18 L6 21 L7 14 L3 9 L9 8 Z" stroke="cyan" stroke-width="2" fill="none" />
+               </svg>`,
   "video-rey": `<svg xmlns="http://www.w3.org/2000/svg" class="w-64 h-64 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path d="M12 2 L15 8 L21 9 L17 14 L18 21 L12 18 L6 21 L7 14 L3 9 L9 8 Z" stroke="cyan" stroke-width="2" fill="none" />
                </svg>`,
