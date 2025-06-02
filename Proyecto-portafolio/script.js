@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
       } else {
-        entry.target.classList.remove('show'); // así vuelve a animar cuando regresas
+        entry.target.classList.remove('show'); 
       }
     });
   }, {
@@ -23,5 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => {
     observer.observe(section);
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const skillCards = document.querySelectorAll('.skill-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('slide-in');
+        }, index * 450);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  skillCards.forEach(card => {
+    observer.observe(card);
   });
 });
