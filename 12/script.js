@@ -52,3 +52,16 @@ function eliminaEspaciosEInvierte(cadena) {
 }
 
 console.log(eliminaEspaciosEInvierte("Kevin rodr igu ez"));  
+
+//const eliminaEspaciosEInvierte = str => str.replace(/\s+/g, '').split('').reverse().join('');//
+let swich = true;
+
+do {
+  let numero = parseFloat(prompt("Ingresa un número (negativo para salir):"));
+
+  if (numero >= 0) {
+    swich = true;
+  } else {
+    swich = false;
+  }
+} while (swich);
