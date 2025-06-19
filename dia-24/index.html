@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+    <style>
+      @keyframes bump {
+        0% {
+          transform: translateY(0) scale(1);
+        }
+        30% {
+          transform: translateY(-6px) scale(1.05);
+        }
+        100% {
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .card:hover {
+        animation: bump 300ms ease;
+      }
+    </style>
+  </head>
+<body >
+    <header class="flex justify-around bg-blue-700 p-4 text-white items-center">
+      <div id="logo">
+        <img
+          src="./src/pokebola2025.gif"
+          alt=""
+          class="size-16 rounded-full object-cover"
+        />
+      </div>
+      <div>
+        <img
+          src="https://pokedex-angelo-neves.netlify.app/assets/Pok%C3%A9mon_soon.svg.png"
+          alt=""
+          class="h-14"
+        />
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </header>
+    <main class="px-20 py-10 min-h-screen bg-[repeating-linear-gradient(135deg,_#f3f3f3_0,_#f3f3f3_20px,_transparent_20px,_transparent_80px)]">
+      <div
+        id="contenedor-cards"
+        class="grid grid-cols-1 gap-6 p-8 bg-white rounded-2xl md:grid-cols-4 "
+      >
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-col items-center justify-center">
+          <div id="cont-img" class="bg-gray-100 rounded-xl">
+            <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"
+              alt=""
+            />
+          </div>
+          <div
+            id="cont-pkm"
+            class="flex flex-col justify-start w-full p-2 gap-1"
+          >
+            <h3 class="text-gray-500 font-semibold">#0001</h3>
+            <h2 class="text-2xl">escuero</h2>
+            <div id="tipos">
+              <p
+                class="bg-blue-600 text-white px-4 rounded-xs w-[30%] text-center"
+              >
+                water
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
