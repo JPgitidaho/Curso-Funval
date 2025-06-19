@@ -34,6 +34,26 @@ const typeColors = {
   flying: "bg-sky-400",
 };
 
+// Mostrar skeletons mientras se cargan los datos
+function mostrarSkeleton() {
+  contenedor.innerHTML = "";
+  for (let i = 0; i < porPagina; i++) {
+    contenedor.innerHTML += `
+      <div class="card animate-pulse bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center gap-4">
+        <div class="w-24 h-24 bg-gray-300 rounded-xl"></div>
+        <div class="w-full space-y-2">
+          <div class="h-4 bg-gray-300 rounded w-1/2"></div>
+          <div class="h-6 bg-gray-400 rounded w-3/4"></div>
+          <div class="flex gap-2">
+            <div class="h-6 w-1/3 bg-gray-300 rounded"></div>
+            <div class="h-6 w-1/3 bg-gray-300 rounded"></div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+}
+
 // Renderizar tarjetas
 function renderizarPokes(pokemons) {
   contenedor.innerHTML = "";
@@ -61,6 +81,7 @@ function renderizarPokes(pokemons) {
 
 // Mostrar Pokémon normales paginados
 async function traerPokemons(pagina) {
+  mostrarSkeleton();
   pokemons = [];
   let inicio = (pagina - 1) * porPagina + 1;
   let fin = inicio + porPagina - 1;
@@ -76,14 +97,14 @@ async function traerPokemons(pagina) {
 
 // Mostrar menú
 btn.addEventListener("click", function () {
-  menu.classList.toggle("hidden");  //:)
+  menu.classList.toggle("hidden");
 });
 
 // Renderizar tipos en el dropdown
 async function renderizarTipos() {
   listaTipos.innerHTML = "";
 
-  // Opción para ver todos
+  // Opción "Todos"
   const verTodos = document.createElement("li");
   const linkTodos = document.createElement("a");
   linkTodos.href = "#";
@@ -134,7 +155,8 @@ async function filtrarPorTipo(tipo) {
 
 // Mostrar página del filtro actual
 async function renderizarPaginaFiltrada() {
-  contenedor.innerHTML = "";
+  mostrarSkeleton();
+
   let inicio = (paginaActual - 1) * porPagina;
   let fin = inicio + porPagina;
 
