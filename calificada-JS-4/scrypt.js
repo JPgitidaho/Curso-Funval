@@ -63,7 +63,7 @@ async function fetchUsers() {
 
   } catch (error) {
     console.error('Error al cargar los usuarios:', error);
-    container.innerHTML = ''; // limpiar skeletons
+    container.innerHTML = ''; 
     if (errorMessage) {
       errorMessage.textContent = 'Error al cargar los usuarios. Inténtalo de nuevo más tarde.';
       errorMessage.classList.add('text-red-600', 'text-center', 'mt-6', 'text-lg');

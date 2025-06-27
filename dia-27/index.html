@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="h-screen flex flex-column items-center justify-center bg-gray-300">
+    <h1 class="text-amber-300 ">DROPDWN </h1>
+    <div id="contenedor" class="relative">
+      <!-- boton -->
+      <button id="btn" class="bg-blue-500 text-white p-4 rounded-xl text-2xl">
+        menu
+      </button>
+      <!-- dropdwn -->
+      <div id="supercontenedor" class="flex">
+        <div
+          id="dropdwn"
+          class="bg-white shadow-2xl rounded mt-2 border border-gray-100 w-32 z-20 hidden"
+        >
+          <ul id="lista" class="flex flex-col gap-2 w-full text-xl">
+            <li id="btnterror" class="hover:bg-gray-100 p-2">terror</li>
+            <li id="btncomedia" class="hover:bg-gray-100 p-2">comedia</li>
+            <li id="btnaccion" class="hover:bg-gray-100 p-2">accion</li>
+          </ul>
+        </div>
+        <div
+          id="submenucontenedor"
+          class="bg-white shadow-2xl rounded mt-2 border border-gray-100 w-32 z-20 hidden"
+        >
+          <ul id="terro" class="hidden">
+            <li>submenu de terror</li>
+          </ul>
+          <ul id="comedia" class="hidden">
+            <li>submenu de comedia</li>
+          </ul>
+          <ul id="accion" class="hidden">
+            <li>submenu de accion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <input type="text" class="" />
+    </div>
+  </body>
+</html>
